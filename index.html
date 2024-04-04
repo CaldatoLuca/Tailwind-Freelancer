@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Freelancer</title>
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/d7e1ca7451.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header
+      class="flex justify-center p-8 text-amber-50 text-lg uppercase font-bold shadow-2xl shadow-black-500/50 bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%"
+    >
+      <div class="container flex flex-wrap justify-between items-center">
+        <!-- Title -->
+        <div><h3>Start Tailwind</h3></div>
+
+        <!-- Nav -->
+        <nav>
+          <!-- Menu large -->
+          <ul class="sm:flex gap-3 hidden">
+            <li>
+              <a href="#portfolio" class="hover:text-indigo-600">Portfolio</a>
+            </li>
+            <li><a href="#about" class="hover:text-indigo-600">About</a></li>
+            <li>
+              <a href="#contact" class="hover:text-indigo-600">Contact</a>
+            </li>
+          </ul>
+
+          <!-- Hamburger -->
+          <button
+            id="menuBtn"
+            class="sm:hidden rounded-lg bg-white px-2 py-1 cursor-pointer text-indigo-500 hover:bg-indigo-100"
+          >
+            <i class="fa-solid fa-bars text-lg uppercase font-bold"></i>
+          </button>
+        </nav>
+
+        <!-- Menu nascosto -->
+        <div id="menuHidden" class="w-full hidden mt-4">
+          <ul class="flex flex-col gap-3 justify-center items-center sm:hidden">
+            <li>
+              <a href="#portfolio" class="hover:text-indigo-600">Portfolio</a>
+            </li>
+            <li><a href="#about" class="hover:text-indigo-600">About</a></li>
+            <li>
+              <a href="#contact" class="hover:text-indigo-600">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+      <!-- Jumbotron -->
+      <section
+        class="jumbotron flex justify-center items-center bg-emerald-400 py-10 text-white"
+      >
+        <div class="container flex items-center justify-center">
+          <div class="content w-30 text-center">
+            <img src="img/avatar.svg" alt="avatar" class="mb-10" />
+
+            <h1 class="text-5xl uppercase font-bold mb-8">Start Tailwind</h1>
+
+            <i class="fa-solid fa-star mb-8 text-4xl"></i>
+
+            <div class="text-xl uppercase font-bold mb-1">
+              GRAPHIC ARTIST - WEB DESIGNER - ILLUSTRATOR
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio -->
+      <section id="portfolio" class="flex justify-center items-center py-10">
+        <div class="container flex items-center justify-center">
+          <div class="content text-center">
+            <!-- titolo -->
+            <h1
+              class="text-4xl uppercase font-bold mb-8 text-slate-600 font-bold"
+            >
+              Portfolio
+            </h1>
+            <i
+              class="fa-solid fa-star mb-8 text-4xl text-slate-600 font-bold"
+            ></i>
+
+            <!-- griglia -->
+            <div
+              class="grid md:grid-cols-2 md:grid-rows-2 lg:grid-cols-3 lg:grid-rows-2 gap-3 p-10"
+            >
+              <div>
+                <img src="img/cabin.png" alt="cabin" class="rounded-3xl" />
+              </div>
+              <div>
+                <img src="img/cake.png" alt="cake" class="rounded-3xl" />
+              </div>
+              <div>
+                <img src="img/circus.png" alt="circus" class="rounded-3xl" />
+              </div>
+              <div>
+                <img src="img/game.png" alt="game" class="rounded-3xl" />
+              </div>
+              <div>
+                <img src="img/safe.png" alt="safe" class="rounded-3xl" />
+              </div>
+              <div>
+                <img
+                  src="img/submarine.png"
+                  alt="submarine"
+                  class="rounded-3xl"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section
+        id="about"
+        class="flex justify-center items-center bg-emerald-400 py-10 text-white"
+      >
+        <div class="container flex items-center justify-center">
+          <div class="content text-center">
+            <!-- titolo -->
+            <h1 class="text-4xl uppercase font-bold mb-8">About</h1>
+            <i class="fa-solid fa-star mb-8 text-4xl"></i>
+
+            <div class="md:flex gap-5 px-10 text-lg font-bold mb-10">
+              <div class="mb-5 mb:mb-0">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Eligendi cum iste tenetur vero et ab, accusamus ad tempora
+                necessitatibus, maiores impedit dicta est ipsam nobis quas
+                consequuntur, unde illum? Veniam.
+              </div>
+              <div>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Eligendi cum iste tenetur vero et ab, accusamus ad tempora
+                necessitatibus, maiores impedit dicta est ipsam nobis quas
+                consequuntur, unde illum? Veniam.
+              </div>
+            </div>
+
+            <button
+              class="rounded-lg px-3 py-2 cursor-pointer border-2 border-solid border-white hover:bg-white hover:text-black"
+            >
+              <i class="fa-solid fa-download"></i> Download
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="flex justify-center items-center py-10">
+        <div class="container w-100">
+          <div class="content text-center">
+            <!-- titolo -->
+            <h1
+              class="text-4xl uppercase font-bold mb-10 text-slate-600 font-bold"
+            >
+              Contact Me
+            </h1>
+            <i
+              class="fa-solid fa-star mb-10 text-4xl text-slate-600 font-bold"
+            ></i>
+
+            <form action="" class="w-100">
+              <!-- Username -->
+              <div class="flex flex-col w-100 mb-8">
+                <label
+                  for="username"
+                  class="text-start mb-5 text-slate-600 font-bold"
+                  >Username</label
+                >
+                <input
+                  type="text"
+                  id="username"
+                  name="username"
+                  class="w-100 border-b-2 border-zinc-300 outline-none"
+                />
+              </div>
+
+              <!-- Email -->
+              <div class="flex flex-col w-100 mb-8">
+                <label
+                  for="email"
+                  class="text-start mb-5 text-slate-600 font-bold"
+                  >Email Address</label
+                >
+                <input
+                  type="text"
+                  id="email"
+                  name="email"
+                  class="w-100 border-b-2 border-zinc-300 outline-none"
+                />
+                <div class="text-start mt-3 text-red-600 font-bold">
+                  We'll never share your email with anyone else.
+                </div>
+              </div>
+
+              <!-- Phone Number -->
+              <div class="flex flex-col w-100 mb-8">
+                <label
+                  for="phone"
+                  class="text-start mb-5 text-slate-600 font-bold"
+                  >Phone Number</label
+                >
+                <input
+                  type="text"
+                  id="phone"
+                  name="phone"
+                  class="w-100 border-b-2 border-zinc-300 outline-none"
+                />
+              </div>
+
+              <!-- Message -->
+              <div class="flex flex-col w-100 mb-8">
+                <label
+                  for="message"
+                  class="text-start mb-5 text-slate-600 font-bold"
+                  >Message</label
+                >
+                <textarea
+                  name="message"
+                  id="message"
+                  cols="30"
+                  rows="5"
+                  class="w-100 border-b-2 border-zinc-300 outline-none"
+                ></textarea>
+              </div>
+
+              <!-- bottone -->
+              <div class="w-100 text-start">
+                <button
+                  class="rounded-lg px-3 py-2 bg-emerald-400 border-2 text-white cursor-pointer hover:bg-white hover:text-emerald-400 hover:border-2 border-solid border-emerald-400"
+                >
+                  <i class="fa-solid fa-download"></i> Download
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-top bg-sky-900 text-white flex justify-center py-10">
+        <div class="container grid lg:grid-rows-1 lg:grid-cols-3">
+          <!-- sinistra -->
+          <div class="text-center mb-10 lg:mb-0">
+            <h4 class="font-bold uppercase text-2xl mb-5">Location</h4>
+            <div class="font-bold">2215 John Daniel Drive Clark, MO 54243</div>
+          </div>
+
+          <!-- centro -->
+          <div class="text-center mb-10 lg:mb-0">
+            <h4 class="font-bold uppercase text-2xl mb-5">Around the web</h4>
+            <div class="font-bold flex justify-center gap-10 text-4xl">
+              <div><i class="fa-brands fa-facebook"></i></div>
+              <div><i class="fa-brands fa-google-plus-g"></i></div>
+              <div><i class="fa-brands fa-twitter"></i></div>
+              <div><i class="fa-brands fa-linkedin"></i></div>
+            </div>
+          </div>
+
+          <!-- destra -->
+          <div class="text-center">
+            <h4 class="font-bold uppercase text-2xl mb-5">About Freelancer</h4>
+            <div class="font-bold px-10">
+              Freelancer is a free to use, open source Tailwind theme created by
+              <span class="text-emerald-600">Start Tailwind</span>.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="footer-bottom bg-sky-800 flex justify-center p-10 text-white text-xs"
+      >
+        <div>Copyright @ Your Website 2019</div>
+      </div>
+    </footer>
+  </body>
+
+  <script src="js/main.js"></script>
+</html>
